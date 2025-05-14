@@ -21,6 +21,134 @@
 
     <!-- Theme 3 -->
     <!-- <link rel="stylesheet" href="./assets/css/style-three.css"> -->
+<style>
+  /* Skills Section */
+section.skills-section {
+  background-color: var(--dark-primary);
+  color: #fff;
+  padding: 50px 120px;
+}
+.skills-section h2 {
+  font-size: 28px;
+  margin: 18px 0;
+    text-align: center;
+}
+
+  .skills-section h2 > span {
+  color: var(--primary);
+}
+
+
+  .skill {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .skill span {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  .progress-bar {
+    background: #ddd;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 25px;
+  }
+
+  .progress {
+    background: #00bcd4;
+    color: white;
+    text-align: right;
+    padding: 0 10px;
+    line-height: 25px;
+    height: 100%;
+    border-radius: 25px 0 0 25px;
+    font-size: 14px;
+  }
+  
+  /* Certificates Section */
+.certificates-section {
+   background-color: #22282f;
+  color: #fff;
+  text-align: center;
+  padding: 30px;
+}
+
+.certificates-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.certificates-section h2 > span {
+  color: var(--primary);
+}
+
+.certificates-container .certificate {
+  margin-bottom: 30px;
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+
+.certificates-container .certificate h4 {
+  color: var(--primary);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Publications Section */
+.publications-section {
+  background-color: #22282f;
+  color: #fff;
+  padding: 50px 120px;
+  text-align: center;
+}
+
+.publications-section h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+.publications-section h2 > span {
+  color: var(--primary);
+}
+
+.publications-container .publication {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+}
+.publications-container .publication h4 {
+  color: var(--primary);
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.projects-card-box__buttons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-card-box__buttons button {
+  background-color: var(--dark-secondary);
+}
+
+.projects-card-box__buttons button > a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #fff;
+}
+
+
+</style>
 
 </head>
 
@@ -39,8 +167,17 @@
                 <li>
                     <a href="#about">About</a>
                 </li>
+				   <li>
+                    <a href="#skills">Skills</a>
+                </li>
+				   <li>
+                    <a href="#certificates">Certificates</a>
+                </li>
                 <li>
                     <a href="#projects">Projects</a>
+                </li>
+				 <li>
+                    <a href="#publications">Publications</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>
@@ -58,8 +195,7 @@
                 <div>
                     <h4 title="Hello, How are you?">Hi, There!</h4>
                     <h2 class="hero-section__title">I'm <span>Paramee Weesinghe</span></h2>
-                    <p class="hero-section__desc">Hi there!
-I'm Paramee Weesinghe – a QA Engineer who’s passionate about making things work just right. I take pride in ensuring software is reliable, user-friendly, and high in quality. Whether it's finding tricky bugs, exploring edge cases, or improving user experience, I enjoy digging into the details that matter.
+                    <p class="hero-section__desc">A QA Engineer who’s passionate about making things work just right. I take pride in ensuring software is reliable, user-friendly, and high in quality. Whether it's finding tricky bugs, exploring edge cases, or improving user experience, I enjoy digging into the details that matter.
 
 Outside of testing, I love exploring new tech tools, staying updated with the latest trends, and diving into puzzles or games that challenge my thinking. For me, quality isn’t just a job. It’s a mindset. </div>
 
@@ -122,6 +258,108 @@ In this portfolio, you’ll find some of the key projects I've contributed to—
             </div>
 
         </section>
+      <section class="skills-section" id="skills">
+    <div class="skills-container">
+        <h2>My <span>Skills</span></h2>
+
+        <div class="skill">
+            <span>Manual Testing</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 90%;">98%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>Selenium WebDriver</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 85%;">85%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>JMeter</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">80%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>Java</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 75%;">75%</div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <span>Postman & API Testing</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">80%</div>
+        </div> 
+			
+		<div class="skill">
+            <span>TestNG</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">80%</div>
+        </div>  
+			
+		<div class="skill">
+            <span>Cucumber</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">95%</div>
+        </div> 
+		
+		<div class="skill">
+            <span>Junit</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">70%</div>
+        </div> 
+			
+		<div class="skill">
+            <span>SQL</span>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;">95%</div>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Certificates Section -->
+<section class="certificates-section" id="certificates">
+    <h2>My <span>Certificates</span></h2>
+    <div class="certificates-container" style="max-width: 800px; margin: auto; padding: 20px;">
+        <div class="certificate">
+            <h4>ISTQB Certified Tester Foundation Level (CTFL; Core) v4.0</h4>
+            <p>International Software Testing Qualifications Board – Validated foundational knowledge of software testing principles, practices, and terminology.</p>
+        </div>
+        <div class="certificate">
+            <h4>ISTQB Certified Tester Foundation Level Agile Tester (CTFL-AT; Agile) v2014</h4>
+            <p>Demonstrated expertise in Agile testing methodologies and understanding of Agile software development principles.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Publications Section -->
+<section class="publications-section" id="publications">
+    <h2>My <span>Publications</span></h2>
+    <div class="publications-container" style="max-width: 800px; margin: auto; padding: 20px;">
+        <div class="publication">
+            <h4>Research Paper Publication</h4>
+            <p><strong>Title:</strong> “Trek — A Mobile App Solution for Safe Exploration and Healthy Lifestyles”</p>
+            <p><strong>Published In:</strong> IEEE Xplore Library</p>
+            <p><strong>Conference:</strong> 5th International Conference on Advancements in Computing (ICAC2023), Faculty of Computing, Sri Lanka Institute of Information Technology, Sri Lanka</p>
+
+            <div class="projects-card-box__buttons">
+                <button class="btn btn-dark-outlined">
+                    <a href="https://ieeexplore.ieee.org/document/10417650" target="_blank">
+                        View on IEEE <i class="fa-solid fa-external-link"></i>
+                    </a>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
 
         <!-- Projects Section -->
         <section class="projects-section" id="projects">
@@ -181,6 +419,8 @@ In this portfolio, you’ll find some of the key projects I've contributed to—
 
             </div>
         </section>
+
+
 
         <!-- Contact Section -->
         <section class="contact-section" id="contact">
